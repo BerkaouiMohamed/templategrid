@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(13, 102, 227);
+  
+font-family: 'Roboto Mono', monospace;
+height: 200vh;
+}
+.abc{
+    position: relative;
+    height: 120vh;
+    overflow: hidden;
+}
+
+nav{
+    font-weight: 600;
+    text-transform: capitalize;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    position: sticky;
+    top: 10px;
+    z-index: 10000;
+    backdrop-filter: blur(5px);
+    padding: 0 20px;
+}
+nav img{
+    height: 70px;
+}
+nav div {
+    display: flex;
+    gap: 5px;
+    
+    align-items: center;
+}
+nav div hr {
+    height:  70px;
+}
+nav ul{
+
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+nav button{
+    width: 150px;
+    border-radius:50px;
+    height: 50px;
+    border: 0;
+    background-image: linear-gradient(to bottom , yellow,orange,orange);
+}
+section{
+    display: grid;
+    grid-template-columns: 300px 500px 300px;
+    height: 500px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    z-index: 10;
+
+}
+section>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: beige;
+    align-self: center;
+    z-index: 10;
+    border: 2px solid rgba(0, 0, 0, 0.091);
+   
+
+}
+.kassetlbackgroud{
+    width: 120vw;
+    height: 100vh;
+    top: 350px;
+    left: -10%;
+    transform: rotate(-10deg);
+    background-color: blanchedalmond;
+    position: absolute;
+    z-index: 1;
+    filter: drop-shadow(50%);
+}
+section img{
+    height: 500px;
+    width: 500px;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    border-radius: 50%;
+    z-index: 10;
+
+}
+
+.ktiba{
+    text-align: center;
+    position: relative;
+    z-index: 11;
+    line-height: 70px;
+}
+.ktiba p,.ktiba h1{
+    z-index: 11;
+}
+
+.ktiba>:nth-child(1){
+color: red;
+}
+.ktiba>:nth-child(3){
+    color: gray;
+}
+.ktiba h1 span{
+    font-size: 1.2em;
+}
